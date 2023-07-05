@@ -1,0 +1,19 @@
+Step 1:
+If you have a Zip file of pervios Flutter version.
+Add its path in >>File>>Setting>>languages and Framework>>(1)Dart ..."...\flutter\bin\cache\" (2).Flutter "....\flutter"
+
+
+Step 2:
+Flutter is versioned using git. Changing the Flutter version is as simple as changing git branch.
+
+There are 2 different ways:
+
+    flutter channel <branch> (example: flutter channel stable)
+
+This command is used to change between branches – usually stable/dev/beta/master. We can also put a specific commit id from git.
+
+    flutter downgrade <version> (example: flutter downgrade v1.2.1)
+
+This command will use a specific version number. You can have the list of the available version numbers using flutter downgrade or here
+
+After this, run any Flutter command (such as flutter doctor), and Flutter will take care of downloading/compiling everything required to run this version.
